@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    font-family:sans-serif;
+    background-color: #235347;
+}
+
+header nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    background-color: #07201a;
+}
+
+nav ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+ul li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar{
+    display:none;
+}
+
+ul li a:hover{
+    color:#050f0d;
+    transition: 0.2s ease;
+    border-bottom: 1px solid white;
+    
+}
+
+nav h1{
+    color:yellow;
+    
+}
+
+header nav span a{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+header nav span a:hover{
+    background-color:#07201a;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+
+.home{
+    padding-top: 50px;
+    height: 650px;
+    text-align: center;
+    align-content: center;
+}
+
+main .home p{
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+main .home p span{
+    color:yellow;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.home h1{
+    color: white;
+    font-size:60px ;
+}
+
+
+main span img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+hr{
+    height: 5px solid white;
+}
+
+/*About me styling*/
+.about-me .experiences{
+    padding: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.experience1{
+    width: 300px;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #07201a;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 8px 5px;
+}
+
+.box h3{
+    color: yellow;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.box p{
+    color:white;
+    font-size: 18px;
+}
+.who-i-am img{
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px 8px rgba(255, 255, 255, 0.493);
+}
+.who-i-am{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-about-me{
+    width: 60%;
+    height: 300px;
+    align-content: center;
+    text-align: left;
+}
+
+.text-about-me h1{
+    color:yellow;
+}
+
+.text-about-me p{
+    color:#fff;
+    font-size: 18px;
+    font-family:sans-serif;
+    text-spacing-trim:normal;
+
+}
+
+
+
+
+/* skills styling */
+.Skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-top: 100px;
+}
+
+.skills-inclusion{
+    margin-left: 25px;
+    margin-bottom: 10px;
+    width: 600px;
+    text-align: left;
+
+}
+
+.skills-inclusion h1, .skills-inclusion p{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+
+
+#hireMe a{
+    color: black;
+    text-decoration: none;
+    font-size:20px;
+    background-color: yellow;
+    padding: 8px;
+    text-align: center;
+    border-radius:10px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 30px;
+
+}
+
+#hireMe a:hover{
+    background-color:#07201a;
+    color: #fff;
+    transition:0.2s ease-in-out ;
+}
+
+.programming-languages{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.programming-languages .languages-box{
+    width: 250px;
+    height: 250px;
+    display: block;
+    align-content: center;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    padding-bottom:0;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.76);
+}
+
+.languages-box .explore p{
+    color:#fff;
+    font-size: 15px;
+   
+}
+
+.languages-box a{
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+
+.languages-box a:hover{
+    background-color: #07201a;
+    color: white;
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+
+.group-work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-work-box{
+    align-self: center;
+    width: 80%;
+    height: 80px;
+    background-color:yellow;
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 100px;
+    padding: 15px;
+    position: relative;
+    top: 50px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.76);
+}
+
+.group-work-box h2 a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.group-work-box p{
+    width: 50%;
+}
+
+.group-work-box span a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius:15px;
+    padding: 10px;
+    color: black;
+}
+
+.group-work-box span a:hover{
+    background-color:#07201a;
+    color: white;
+    transition: 0.3s ease-in-out;
+    border: 0;
+}
+
+/*footer styling*/
+footer{
+    height: auto;
+    padding-bottom: 50px;
+    background-color: #07201a;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+
+}
+
+footer .brand-name{
+    text-align: left;
+}
+
+footer .brand-name h3{
+    font-size: 22px;
+    color: yellow;
+
+}
+
+footer .brand-name p{
+    font-size: 15px;
+    color: white;
+}
+
+footer h3{
+    font-size: 22px;
+    color: white;
+
+}
+
+.links{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.useful-links, .Social-media-links{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.useful-links a, .Social-media-links a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #235347;
+}
+
+.useful-links a:hover, .Social-media-links a:hover{
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.News-letter input{
+    margin-top: 9px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.News-letter button{
+    padding: 10px;
+    width: 60px;
+    background-color: yellow;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow:0 4px 4px 8px 6px;
+}
+
+.News-letter button:hover{
+    background-color:#07201a;
+    color:#fff;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* ================= Responsive Design ================= */
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    #navhire{
+        display: none;
+    }
+
+    #navbar{
+        display: flex;
+        color: #fff;
+        max-width: 50px;
+    }
+    .about-me .experiences {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+    }
+    .who-i-am {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .programming-languages {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .Skills {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .skills-inclusion {
+        width: 90%;
+        text-align: center;
+    }
+    .group-work-box {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        gap: 10px;
+        padding: 20px;
+    }
+    .group-work-box p {
+        width: 90%;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+    .News-letter input {
+        width: 90%;
+    }
+}
+/* For mobile phones */
+@media (max-width: 600px) {
+    #navhire{
+        display: none;
+    }
+    main{
+        background-color:mediumseagreen;
+    }
+    header nav {
+       /* flex-direction: column;*/
+        height: auto;
+        padding: 20px;
+    }
+    nav ul {
+        display:none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+    }
+
+    #navbar{
+        display: flex;
+        color: white;
+        width: 200px;
+    }
+
+    nav h1{
+        
+        margin-left: 0;
+    }
+    .home h1 {
+        font-size: 40px;
+
+    }
+    .home p {
+        font-size: 16px;
+    }
+    main span img {
+        width: 150px;
+        height: 150px;
+    }
+    .experience1 {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .text-about-me {
+        width: 90%;
+        text-align: center;
+        height: auto;
+    }
+    .who-i-am img {
+        width: 90%;
+        height: auto;
+    }
+    .languages-box {
+        width: 90%;
+        height: auto;
+    }
+    #hireMe a {
+        float: none;
+        display: inline-block;
+        margin: 20px auto;
+    }
+    .group-work-box {
+        width: 95%;
+        top: 0;
+    }
+    footer .brand-name, footer h3 {
+        text-align: center;
+    }
+    .News-letter button {
+        width: 100px;
+    }
+}
