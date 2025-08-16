@@ -15,7 +15,7 @@
             <ul>
                 <li><a id="Homescroll" href="#Home">Home</a></li>
                 <li><a id="Aboutscroll" href="#About">About</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Contact">Contact</a></li>
                 
@@ -30,7 +30,7 @@
     <main id="Home">
         <div class="home">
             <p >Hi, I'm <span>Brain Code</span>👋...</p>
-            <h1>Creative Front-End Web Developer</h1>
+            <h1 id="typing">Creative Front-End Web Developer</h1>
             <p>i Design and code beautiful, simple and catchy web pages</p>
             <span><img src="logo.jpg" alt="brain logo"></span>
         </div>
@@ -115,7 +115,7 @@
                 <div class="explore">
                     <p>I'm a Senior Database Admistrator with 2years experience</p>
                 </div>
-               <br><br><br>
+               <br><br><br><br>
                 <a href="#">Explore Now</a>
             </div>
         </div>
@@ -166,9 +166,52 @@ https://www.linkedin.com/in/abdul-rahman-abdul-tawaab-871b29306?utm_source=share
         </div>
         
     </footer>
-<p>&copy; 2025 Brain-code.All Right Reserved</p>
+        <div class="copyright">
+        <p style="background-color:#07201a; color: white; padding-bottom:20px;">&copy; 2023 BrainTech. All rights reserved.</p> 
 
+        <!--========JavaScript part =======--> 
     <script>
+
+ const text = "Creative Front-End Web Developer";
+    const typingElement = document.getElementById("typing");
+    let index = 0;
+    let typing = true;
+
+    function typeEffect() {
+      if (typing) {
+        if (index < text.length) {
+          typingElement.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeEffect, 150); // typing speed
+        } else {
+          typing = false;
+          setTimeout(typeEffect, 5000); // wait 5s after typing
+        }
+      } else {
+        if (index > 0) {
+          typingElement.textContent = text.substring(0, index - 1);
+          index--;
+          setTimeout(typeEffect, 100); // erasing speed
+        } else {
+          typing = true;
+          setTimeout(typeEffect, 500); // short pause before typing again
+        }
+      }
+    }
+
+    typeEffect();
+
+
+
+
+
+
+
+
+
+
+
+
         //Smoth scrolling for anchor links
         document.getElementById('Aboutscroll').addEventListener('click', function(){
             const target = document.getElementById('About');

@@ -13,8 +13,9 @@ body{
     box-sizing: border-box;
     align-items: center;
     text-align: center;
-    font-family:sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #235347;
+    font-size: 16px;
 }
 
 header nav{
@@ -27,6 +28,7 @@ header nav{
     position:fixed;
     padding: 10px;
     background-color: #07201a;
+    z-index: 1000;
 }
 
 nav ul{
@@ -40,6 +42,10 @@ ul li a{
     font-size: 25px;
     text-decoration: none;
     color: white;
+}
+
+.nav-bar{
+    display:none;
 }
 
 
@@ -109,6 +115,7 @@ main .home p span{
 .home h1{
     color: white;
     font-size:60px ;
+    overflow: hidden;
 }
 
 
@@ -141,8 +148,7 @@ hr{
     background-color: #07201a;
     padding: 10px;
     border-radius: 15px;
-    box-shadow: 0px 5px 3px 4px;
-    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);    
 }
 
 .box h3{
@@ -183,8 +189,8 @@ hr{
 
 .text-about-me p{
     color:#fff;
-    font-size: 18px;
-    font-family:sans-serif;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     text-spacing-trim:normal;
 
 }
@@ -219,6 +225,7 @@ hr{
 
 
 #hireMe a{
+    display: none;
     color: black;
     text-decoration: none;
     font-size:20px;
@@ -259,13 +266,14 @@ hr{
 }
 .programming-languages .languages-box{
     width: 250px;
-    height: 250px;
+    height: auto;
     display: block;
     align-content: center;
     border: 0.5px solid #07201a;
     border-radius: 8px;
-    padding-bottom:0;
-    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.76);
+    padding-bottom:20px;
+    padding-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .languages-box .explore p{
@@ -418,6 +426,59 @@ footer h3{
     color:#fff;
     transition: 0.3s ease-in-out;
 }
+/*================My Portfolio==========*/
+#portfolio {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.portfolio-item h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.portfolio-item p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.portfolio-item a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio-item a:hover {
+  text-decoration: underline;
+}
+
 
 
 /* ================= Responsive Design ================= */
@@ -430,7 +491,17 @@ footer h3{
     filter: invert(100%) brightness(200%);
 }
 
+    hr{
+     display: flex;
+    color:white;
+    height: 2px;
+    }
+
     #navhire{
+        display: none;
+    }
+
+    #hireMe{
         display: none;
     }
 
@@ -489,12 +560,18 @@ footer h3{
 @media (max-width: 600px) {
 
     hr{
+        display: flex;
         color:white;
         height: 2px;
     }
     #navhire{
         display: none;
     }
+
+     #hireMe{
+        display: flex;
+    }
+
     main{
         padding-left: 10px;
         padding-right: 10px;
@@ -515,6 +592,7 @@ footer h3{
     } 
     
     .nav-bar {
+        display: flex;
         margin-right: 50px;
         height: 30px;
         cursor: pointer;
@@ -538,7 +616,6 @@ nav ul.show{
 
 
  header nav {
-       /* flex-direction: column;*/
         height: auto;
         padding: 20px;
     }
@@ -555,13 +632,6 @@ nav ul.show{
         color: white;
         width: 200px;
     }
-
-    nav h1{
-        
-        margin-left: 0;
-    }
-
-
 
     .home h1 {
         font-size: 40px;
@@ -581,14 +651,15 @@ nav ul.show{
         padding: 20px;
         background-color: #1fe05fa1;
         border: 1px solide #1fe05f;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .experiences h3{
-        color: #06363D;
+        color: yellow;
     }
 
     .box p{
-        color: #E0EDE9;
+        color: #ffffff;
     } 
 
     .text-about-me {
@@ -603,6 +674,7 @@ nav ul.show{
     .languages-box {
         width: 90%;
         height: auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     #hireMe a {
         float: none;
@@ -620,3 +692,40 @@ nav ul.show{
         width: 100px;
     }
 }
+
+
+
+/* ✅ Responsive Tweaks */
+@media (max-width: 768px) {
+  #portfolio h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-item h3 {
+    font-size: 1rem;
+  }
+
+  .portfolio-item p {
+    font-size: 0.9rem;
+  }
+
+  .portfolio-item {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #portfolio {
+    padding: 40px 10px;
+  }
+
+  #portfolio h2 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
